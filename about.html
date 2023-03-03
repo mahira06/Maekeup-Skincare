@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="about.css">`
+   
+</head>
+<body>
+   
+     
+  <header>
+        <input type ="checkbox" name ="" id ="chk1">
+            <div class="search-box">
+                <form>
+                    <input type ="text" name ="search" id ="srch" placeholder="Search">
+                    <button type ="submit"><i class="fa fa-search"></i></button>
+                </form>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.com">About</a></li>
+                <li><a href="tip.html">Tips & Tutorials</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+            <div class="menu">
+                <label for="chk1">
+                    <i class="fa fa-bars"></i>
+                </label>
+            </div>
+    </header>
+
+ </style>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 2</div>
+  <img src="front1.jpeg" style= width:30% height=10%>
+</div>
+
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="front2.jpg" style= width:30% height=10%>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="front3.jpg" style= width:30% height=10%>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 1</div>
+  <img src="front4.jpg" style= width:30% height=10%>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4 / 1</div>
+  <img src="front5.jpg" style= width:30% height=10%>
+</div>
+
+
+
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 5 seconds
+}
+</script>
+
+<!--main area-->
+   
+   <div class="container">
+       <div class="box">
+           <p>
+                <h1>About Myself : </h1> <br>
+                <h2> I am a person with knowledge of make-up, beauty products and procedures who loves to create desired visual results.</h2><br>
+                <h2> I can enhance the best features of each unique face, work in many roles and settings, specializing in weddings, events, photoshot, faceart more.</h2><br>
+                <h3> Also i'm a Cosmetologist : Cosmetology is the study of hair, nails, skincare, and makeup.</h3>
+
+               
+           </p>
+       </div>
+
+    
+
+
+
+</body>
+</html>
